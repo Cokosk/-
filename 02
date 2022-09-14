@@ -1,0 +1,15 @@
+#define _CRT_SECURE_NO_WARNINGS 1 
+#include <stdio.h>
+int main()
+{
+	int x = 6;
+	
+	scanf("%d ", &x);
+
+	//*=:乘后赋值
+
+	x = x += x-= x*x;
+   //先算x最初赋值 （x=6)6-36=-30 再算第二次赋值 （x=-30） -30-30=-60
+	printf("x =%d\n", x);
+	return  0;
+}
